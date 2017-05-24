@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <form (submit)="sendEmail(message)">
+      <div class="input-group">
+        <label for="name" class="input-group-addon">Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" [(ngModel)]="message.name" required>
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="email" class="input-group-addon">Email</label>
+        <input type="text" name="email" class="form-control" placeholder="Your Email" [(ngModel)]="message.email" required>
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="message" class="input-group-addon">Message</label>
+        <textarea class="form-control" rows="3" name="message" [(ngModel)]="message.message" required></textarea>
+      </div>
+      <br>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

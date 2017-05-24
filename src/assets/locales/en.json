@@ -1,0 +1,24 @@
+{
+  "APP_TITLE": "Example Site",
+  "HOME": "Home",
+  "USERS": "Users",
+  "ABOUT": "About",
+  "CONTACT": "Contact",
+  "SECOND_LEVEL": "Second level",
+  "PROFILE": "Profile",
+  "BACK": "Back",
+
+  "HOME_TEXT": "Home works",
+  "LAZY_TEXT": "Lazy works",
+  "ABOUT_TEXT": "About works",
+  "USERS_TEXT": "Users works",
+  "PROFILE_TEXT": "Profile page",
+  "USER_TEXT": "User page",
+
+  "ROUTES.users": "users",
+  "ROUTES.profile": "profile",
+  "ROUTES.home": "home",
+  "ROUTES.about": "about",
+  "ROUTES.contact": "contact",
+  "ROUTES.secondlevel":"secondlevel"
+}

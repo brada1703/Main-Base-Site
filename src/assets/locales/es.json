@@ -1,0 +1,24 @@
+{
+  "APP_TITLE": "Sitio de Ejemplo",
+  "HOME": "Home",
+  "USERS": "Usuarios",
+  "ABOUT": "Sobre",
+  "CONTACT": "Contacto",
+  "SECOND_LEVEL": "Segundo Nivel",
+  "PROFILE": "Perfil",
+  "BACK": "Regresa",
+
+  "HOME_TEXT": "Home Funciona",
+  "LAZY_TEXT": "Lazy Funciona",
+  "ABOUT_TEXT": "Sobre Funciona",
+  "USERS_TEXT": "Users Funciona",
+  "PROFILE_TEXT": "Perfil",
+  "USER_TEXT": "Usuarios",
+
+  "ROUTES.users": "usuarios",
+  "ROUTES.profile": "perfil",
+  "ROUTES.home": "home",
+  "ROUTES.about": "sobre",
+  "ROUTES.contact": "contacto",
+  "ROUTES.secondlevel":"segundonivel"
+}

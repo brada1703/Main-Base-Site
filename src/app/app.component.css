@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #106cc8;
+  border-bottom: 2px solid #1059b1;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 16px;
+  letter-spacing: 0.1px;
+  margin: 0;
+  display: block;
+}
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+  display: inline;
+}
+.button-bar {
+  float: right;
+}
+header a, header button {
+  float: right;
+  margin: 0 8px;
+}
+header a.router-link-active {
+  color: White;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-center {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .invisible-small {
+    visibility: hidden;
+  }
+  .padding-small {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .dropdown-menu {
+    min-width: 70px;
+  }
+  .nav li a {
+    padding: 10px 0px;
+  }
+}

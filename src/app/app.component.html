@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default" style="margin-bottom: 10px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" (click)="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{{ 'APP_TITLE' | translate }}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed">
+      <ul class="nav navbar-nav navbar-center" style="display: inline-block;">
+        <li routerLinkActive="nav-item active" style="display: inline-block;" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link padding-small" [routerLink]="'/' | localize" [routerLinkActive]="['router-link-active']">{{'HOME' | translate}}</a>
+        </li>
+        <li routerLinkActive="nav-item active" style="display: inline-block;">
+          <a class="nav-link padding-small" [routerLink]="'/about' | localize" [routerLinkActive]="['router-link-active']">{{'ABOUT' | translate}}</a>
+        </li>
+        <li routerLinkActive="nav-item active" style="display: inline-block;">
+          <a class="nav-link padding-small" [routerLink]="'/users' | localize" [routerLinkActive]="['router-link-active']">{{'USERS' | translate}}</a>
+        </li>
+        <li routerLinkActive="nav-item active" style="display: inline-block;">
+          <a class="nav-link padding-small" [routerLink]="'/contact' | localize" [routerLinkActive]="['router-link-active']">{{'CONTACT' | translate}}</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="display: inline-block;">
+        <li dropdown class="nopadding-small">
+          <a dropdownToggle class="dropdown-toggle" style="cursor: pointer;"><span class="glyphicon glyphicon-globe invisible-small"></span> Language <span class="caret invisible-small"></span></a>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem"><a class="dropdown-item" (click)="changeLanguage('en')" style="cursor: pointer;" [routerLinkActive]="['router-link-active']">English</a></li>
+            <li role="menuitem"><a class="dropdown-item" (click)="changeLanguage('es')" style="cursor: pointer;" [routerLinkActive]="['router-link-active']">Español</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<router-outlet></router-outlet>
